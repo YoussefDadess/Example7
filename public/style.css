@@ -1,0 +1,151 @@
+*{
+    font-size: 2rem;
+    margin: auto;
+    font-family: "Open Sans", serif;
+}
+.booking-form {
+
+    margin-top: 17rem;
+    padding: 20px;
+
+
+}
+
+
+select{
+
+    border: none;
+    border-bottom: 3px #3ca4b4 solid;
+
+
+}
+
+
+#other_options {
+
+
+}
+.datecontainer{
+    display: flex;
+    margin-bottom:2em ;
+    
+}
+.datediv{
+    display: flex;
+    gap: 20px;
+}
+.date{
+    border: none;
+    border-bottom:3px solid #3CA4B4FF;
+}
+.btnn{
+    border: none;
+    background-color: #3CA4B4FF;
+    font-weight: normal;
+    color: white;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    -webkit-box-shadow: 2px 2px 11px -4px #000000;
+    box-shadow: 2px 2px 11px -4px #000000;
+    transition: 250ms ease-in;
+}
+.btnn:hover{
+    transition: 250ms ease-in;
+    background-color: #215b63;
+}
+.line{
+    height: 2px;
+    background-color: rgba(26, 30, 33, 0.04);
+    width: 80%;
+    margin: 10px;
+}
+.first_one{
+display: flex;
+    flex-direction: row;
+    margin-bottom: 3em;
+    gap: 20px;
+
+}
+.display{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+}
+td{
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.space{
+    height: 20px;
+}
+.days_number{
+    position: absolute;
+    margin-left: 34em;
+    margin-top: 4em;
+}
+
+@media screen and (max-width: 1000px) {
+    .first_one{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+        gap: 20px;
+
+    }
+}
+
+/*body{*/
+/*    background-color: #d7725c;*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+/*input , select{*/
+
+/*    border-radius: 21px;*/
+/*    border: 0px solid #fff;*/
+/*    box-sizing: border-box;*/
+/*    font-size: 1em;*/
+/*    font-family: 'Nanum Gothic';*/
+/*    padding: 10px;*/
+
+/*}*/
+
+/*.cord{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    */
+/*  }*/
+/*  .cord input{*/
+/*      */
+/*    width: 70%;*/
+/*  */
+/*  }*/
+
+/*  div.elem-group {*/
+/*      margin: 20px 0;*/
+/*    }*/
+/*    .sutiation_famille{*/
+/*        margin: auto;*/
+/*        !* margin-bottom: -30px; *!*/
+/*        width: 25%;*/
+/*        display: flex;*/
+/*        justify-content: space-between;*/
+/*  */
+/*      }*/
+/*      #rooms_number{*/
+/*        width: 70px;*/
+/*      }*/
+
+/*  .elem-group input{*/
+/*    width: 80px;*/
+/*  }*/
+/*  img{*/
+/*      width: 150px;*/
+/*      float: right;*/
+/*  }*/
