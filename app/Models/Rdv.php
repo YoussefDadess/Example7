@@ -9,7 +9,7 @@ class Rdv extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'client_id','hotel_id','start','end','adultes','enfants','capacite','chambre_id',
+        'client_id','hotel_id','start','end','adultes','enfants','capacite','chambre_id', 'approved'
     ];
 
     public function user()

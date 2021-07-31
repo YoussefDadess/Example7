@@ -25,6 +25,7 @@ class CreateRdvsTable extends Migration
             $table->Integer('adultes');
             $table->Integer('enfants');
             $table->Integer('capacite');
+            $table->boolean('approved')->default(0);
             $table->unsignedBigInteger('chambre_id');
             $table->foreign('chambre_id')->references('id')->on('chambres')->onDelete('cascade');
             $table->timestamps();

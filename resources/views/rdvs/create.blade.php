@@ -79,13 +79,13 @@
 									<div class="col-sm-6">
 										<div class="form-group">
 											<span class="form-label">Check In</span>
-											<input class="form-control" type="datetime-local" name="start" required>
+											<input class="form-control" type="text" id="start" name="start" required>
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
 											<span class="form-label">Check out</span>
-											<input class="form-control" type="datetime-local" name="end" required>
+											<input class="form-control" type="text"  id="end" name="end" required>
 										</div>
 									</div>
 
@@ -159,7 +159,15 @@
 					 console.log(error);
 				 }
 			 })
-		 })
+		 });
+		 $('#start').datepicker({
+                dateFormat: "yy-mm-dd",
+                minDate: new Date()
+
+            });
+
+			$('#end').datepicker({             dateFormat: "yy-mm-dd",
+                minDate: new Date()});
 	})
 </script>
 @endsection
@@ -173,5 +181,6 @@
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="Booking/css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
 @endsection

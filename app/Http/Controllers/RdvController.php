@@ -49,6 +49,7 @@ class RdvController extends Controller
 
             $data['user_id'] = Auth::id();
 
+
             // dd($data);
             // dd($start);
             Rdv::create($data);
@@ -85,6 +86,16 @@ class RdvController extends Controller
     
             return redirect()->route('rdvs.index')
                 ->with('success','Booking updated successfully');
+    }
+
+    public function approve(StoreRdvRequest $request) {
+
+        $data = $request->all();
+        $data['approved'] = true;
+
+        // $rdv = Rdv::find
+
+
     }
 
     
